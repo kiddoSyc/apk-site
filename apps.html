@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Android Apps</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Android Apps</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
   <a class="back" href="index.html">⬅ Back to Home</a>
-
   <h1>📱 Android Apps</h1>
-  <p class="subtitle">Useful & popular Android applications</p>
+<p class="subtitle">Useful & popular Android applications</p>
 
-  <div class="card">
-    <h2>WhatsApp</h2>
-    <p>Messaging app for chat and calls</p>
-    <a class="btn" href="#">Download APK</a>
-  </div>
+<input type="text" id="searchInput" placeholder="Search apps...">
 
-  <div class="card">
-    <h2>Telegram</h2>
-    <p>Fast cloud-based messaging app</p>
-    <a class="btn" href="#">Download APK</a>
-  </div>
+<div class="card">
+  <h2>WhatsApp <span class="badge version">v2.50</span> <span class="badge size">40MB</span> <span class="badge original">Original</span></h2>
+  <p>Messaging app for chat and calls</p>
+  <a class="btn" href="#">Download APK</a>
+</div>
+
+<div class="card">
+  <h2>Telegram <span class="badge version">v9.1</span> <span class="badge size">35MB</span> <span class="badge mod">MOD</span></h2>
+  <p>Fast cloud-based messaging app</p>
+  <a class="btn" href="#">Download APK</a>
+</div>
 
 </div>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keyup", function(){
+  const filter = searchInput.value.toLowerCase();
+  document.querySelectorAll(".card").forEach(card=>{
+    const text = card.querySelector("h2").innerText.toLowerCase();
+    if(text.includes(filter)){ card.style.display="block"; } else { card.style.display="none"; }
+  });
+});
+</script>
 
 </body>
 </html>
