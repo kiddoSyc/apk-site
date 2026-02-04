@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Resources</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* extra styles for collapsible */
+details {
+  background:#1f1f1f;
+  border-radius:12px;
+  padding:15px;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+
+summary {
+  font-size:1.2rem;
+  font-weight:600;
+  color:#00ff99;
+  outline:none;
+}
+
+.faculty {
+  margin-top:15px;
+}
+
+.file {
+  margin-top:10px;
+  padding-left:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <a class="back" href="index.html">⬅ Back to Home</a>
+
+  <h1>🎓 Student Resources</h1>
+  <p class="subtitle">Lecture notes, PDFs & past questions (100L – 500L)</p>
+
+  <!-- 100 LEVEL -->
+  <details>
+    <summary>📘 100 Level</summary>
+
+    <details class="faculty">
+      <summary>🔬 Science</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>PHY 101 <span class="badge size">5MB</span></h2>
+          <p>General Physics I lecture notes</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+
+        <div class="card">
+          <h2>MTH 101 <span class="badge size">3MB</span></h2>
+          <p>General Mathematics I</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="faculty">
+      <summary>📚 Arts</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>GST 101 <span class="badge size">2MB</span></h2>
+          <p>Use of English</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+  </details>
+
+  <!-- 200 LEVEL -->
+  <details>
+    <summary>📗 200 Level</summary>
+
+    <details class="faculty">
+      <summary>🔬 Science</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>PHY 201 <span class="badge size">6MB</span></h2>
+          <p>Electricity & Magnetism</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+  </details>
+
+  <!-- 300 LEVEL -->
+  <details>
+    <summary>📙 300 Level</summary>
+
+    <details class="faculty">
+      <summary>🔬 Science</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>PHY 301 <span class="badge size">8MB</span></h2>
+          <p>Quantum Mechanics</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+  </details>
+
+  <!-- 400 LEVEL -->
+  <details>
+    <summary>📕 400 Level</summary>
+
+    <details class="faculty">
+      <summary>🔬 Science</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>Project Writing Guide <span class="badge size">4MB</span></h2>
+          <p>Final year project guide</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+  </details>
+
+  <!-- 500 LEVEL -->
+  <details>
+    <summary>🎓 500 Level</summary>
+
+    <details class="faculty">
+      <summary>🔬 Science</summary>
+
+      <div class="file">
+        <div class="card">
+          <h2>Research Methods <span class="badge size">6MB</span></h2>
+          <p>Advanced research methodology</p>
+          <a class="btn" href="#">Download PDF</a>
+        </div>
+      </div>
+    </details>
+  </details>
+
+</div>
+
+</body>
+</html>
